@@ -5,7 +5,10 @@ import {
   AiOutlineGithub,
 } from "react-icons/ai";
 
-const Header = () => {
+const Header = ({ isScrolled }) => {
+  const headerClassname = `bg-white z-10 flex items-center justify-between px-4 py-5 font-semibold text-sm border-b-[1px] ${
+    isScrolled ? "fixed inset-x-0 top-0" : ""
+  }`;
   const gitLink = "https://github.com/BGM-109/gymwearfinder";
   return (
     <div className="">
@@ -14,7 +17,7 @@ const Header = () => {
           <a target="_blank">⭐️ 별주세요 ⭐️</a>
         </Link>
       </div>
-      <div className="bg-white z-10 flex items-center justify-between px-4 py-5 font-semibold text-sm border-b-[1px] ">
+      <div className={headerClassname}>
         <Link href="/">
           <h1 className="whitespace-nowrap cursor-pointer">
             Gymwear Finder 🚀
