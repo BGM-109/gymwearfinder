@@ -7,7 +7,7 @@ const Card = ({ gym }) => {
   return (
     <Link href={shopLink}>
       <a target="_blank" className="">
-        <div className="cursor-pointer border-2 border-black px-5 py-4 rounded-lg hover:-translate-y-2 hover:-translate-x-2 transition duration-300 space-y-2 mb-5">
+        <div className="cursor-pointer border-2 border-black px-5 py-4 rounded-lg hover:-translate-y-2 hover:-translate-x-2 transition duration-300 space-y-2">
           <Image
             src={url}
             width={45}

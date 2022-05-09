@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import Card from "../components/Card";
 
 export default function Home() {
@@ -24,7 +23,7 @@ export default function Home() {
         <p className="text-sm text-gray-500"></p>
       </div>
 
-      <div className="px-4 py-2 space-y-4">
+      <div className="max-w-7xl px-4 py-2 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {gymwears && gymwears.map((gym) => <Card key={gym.id} gym={gym} />)}
       </div>
     </div>
