@@ -25,6 +25,10 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <title>짐웨어검색</title>
+        <meta
+          name="google-site-verification"
+          content="izeCEOHvCIQeV44FdmsD5Dhm5gWAYuvLh_uzeofRGZM"
+        />
       </Head>
       <Header isScrolled={showTopBtn} />
       <main className="top-6">{children}</main>

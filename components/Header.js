@@ -16,7 +16,7 @@ const Header = ({ isScrolled }) => {
       <div className={headerClassname}>
         <div className="container max-w-7xl flex items-center justify-between mx-auto">
           <Link href="/">
-            <h1 className="whitespace-nowrap cursor-pointer">
+            <h1 className="whitespace-nowrap cursor-pointer font-medium">
               Gymwear Finder 🚀
             </h1>
           </Link>

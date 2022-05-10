@@ -27,9 +27,13 @@ export default function Home() {
       </div>
 
       {isLoad && <Spinner />}
-
-      <div className="max-w-7xl px-4 py-2 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {gymwears && gymwears.map((gym) => <Card key={gym.id} gym={gym} />)}
+      <div className="max-w-7xl px-4 py-2 mx-auto">
+        <h1 className="text-xl font-bold mb-3">
+          {gymwears && gymwears.length}개의 브랜드
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {gymwears && gymwears.map((gym) => <Card key={gym.id} gym={gym} />)}
+        </div>
       </div>
     </div>
   );
